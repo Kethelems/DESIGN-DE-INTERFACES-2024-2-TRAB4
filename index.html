@@ -12,7 +12,6 @@
     <title>The Doctor</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style-nao-critico.css" media="print" onload="this.media='all'">
 </head>
 
 <body>
@@ -168,34 +167,134 @@
             <h2>NOSSOS SERVIÇOS</h2>
             <div class="container">
                 <div class="categories">
+                  
                     <div class="category">
-                        <img src="img/avaliação.webp" alt="Serviço Avaliação" class="service-image" width="300" height="200" loading="lazy">
+                        <img src="img/avaliação.webp" alt="Serviço Avaliação" class="service-image" width="300" height="200" loading="lazy" data-bs-toggle="modal" data-bs-target="#modalAvaliação">
                         <h3>Avaliação</h3>
                     </div>
+                    
+                   
                     <div class="category">
-                        <img src="img/diagnóstico.webp" alt="Serviço Diagnóstico" class="service-image" width="300" height="200" loading="lazy">
+                        <img src="img/diagnóstico.webp" alt="Serviço Diagnóstico" class="service-image" width="300" height="200" loading="lazy" data-bs-toggle="modal" data-bs-target="#modalDiagnóstico">
                         <h3>Diagnóstico</h3>
                     </div>
+                    
+                   
                     <div class="category">
-                        <img src="img/manutenção.webp" alt="Serviço Manutenção" class="service-image" width="300" height="200" loading="lazy">
+                        <img src="img/manutenção.webp" alt="Serviço Manutenção" class="service-image" width="300" height="200" loading="lazy" data-bs-toggle="modal" data-bs-target="#modalManutenção">
                         <h3>Manutenção</h3>
                     </div>
+                    
+                   
                     <div class="category">
-                        <img src="img/trocadeoleo.webp" alt="Serviço Troca de óleo" class="service-image" width="300" height="200" loading="lazy">
+                        <img src="img/trocadeoleo.webp" alt="Serviço Troca de óleo" class="service-image" width="300" height="200" loading="lazy" data-bs-toggle="modal" data-bs-target="#modalTrocaÓleo">
                         <h3>Troca de óleo</h3>
                     </div>
+                    
+                    
                     <div class="category">
-                        <img src="img/gasar.webp" alt="Serviço Ar-condicionado" class="service-image" width="300" height="200" loading="lazy">
+                        <img src="img/gasar.webp" alt="Serviço Ar-condicionado" class="service-image" width="300" height="200" loading="lazy" data-bs-toggle="modal" data-bs-target="#modalArCondicionado">
                         <h3>Ar-condicionado</h3>
                     </div>
+                    
                     <div class="category">
-                        <img src="img/oleos.webp" alt="Serviço Produtos" class="service-image" width="300" height="200" loading="lazy">
+                        <img src="img/oleos.webp" alt="Serviço Produtos" class="service-image" width="300" height="200" loading="lazy" data-bs-toggle="modal" data-bs-target="#modalProdutos">
                         <h3>Produtos</h3>
                     </div>
                 </div>
-                
             </div>
         </section>
+      
+        <div class="modal fade" id="modalAvaliação" tabindex="-1" aria-labelledby="modalAvaliaçãoLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalAvaliaçãoLabel">Serviço de Avaliação</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/avaliação.webp" alt="Avaliação" class="img-fluid">
+                        <p>Informações detalhadas sobre o serviço de avaliação de veículos, diagnósticos iniciais e sugestões de manutenção.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="modalDiagnóstico" tabindex="-1" aria-labelledby="modalDiagnósticoLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalDiagnósticoLabel">Serviço de Diagnóstico</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/diagnóstico.webp" alt="Diagnóstico" class="img-fluid">
+                        <p>Realizamos diagnóstico completo de sistemas e componentes do veículo, identificando problemas e oferecendo soluções.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        <div class="modal fade" id="modalManutenção" tabindex="-1" aria-labelledby="modalManutençãoLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalManutençãoLabel">Serviço de Manutenção</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/manutenção.webp" alt="Manutenção" class="img-fluid">
+                        <p>Oferecemos manutenção preventiva e corretiva para todos os tipos de veículos, garantindo que seu carro esteja sempre em ótimas condições.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="modalTrocaÓleo" tabindex="-1" aria-labelledby="modalTrocaÓleoLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTrocaÓleoLabel">Serviço de Troca de Óleo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/trocadeoleo.webp" alt="Troca de Óleo" class="img-fluid">
+                        <p>Realizamos a troca de óleo com produtos de qualidade, garantindo o bom funcionamento do motor e a longevidade do seu veículo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+          
+        <div class="modal fade" id="modalArCondicionado" tabindex="-1" aria-labelledby="modalArCondicionadoLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalArCondicionadoLabel">Serviço de Ar-condicionado</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/gasar.webp" alt="Ar-condicionado" class="img-fluid">
+                        <p>Serviço especializado para manutenção e reparo de sistemas de ar-condicionado automotivo, garantindo conforto para você e sua família.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="modalProdutos" tabindex="-1" aria-labelledby="modalProdutosLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProdutosLabel">Produtos Automotivos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/oleos.webp" alt="Produtos Automotivos" class="img-fluid">
+                        <p>Confira nossa linha de produtos automotivos de alta qualidade, desde óleos lubrificantes até aditivos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </main>
 
     <footer>
@@ -205,5 +304,6 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
