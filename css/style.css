@@ -93,7 +93,6 @@ header {
     height: auto;
 }
 
-
 .header-subtitle {
     color: #f70000; /* Muda a cor para vermelho */
     font-size: 1em; /* Tamanho do subtítulo */
@@ -108,7 +107,7 @@ header, .banner {
     padding: 0;
 }
 
-
+/* Garante que o carrossel fique diretamente abaixo do menu */
 .banner {
     position: relative;
     top: 0;
