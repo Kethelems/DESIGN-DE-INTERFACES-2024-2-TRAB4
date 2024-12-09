@@ -108,7 +108,7 @@ header, .banner {
     padding: 0;
 }
 
-/* Garante que o carrossel fique diretamente abaixo do menu */
+
 .banner {
     position: relative;
     top: 0;
